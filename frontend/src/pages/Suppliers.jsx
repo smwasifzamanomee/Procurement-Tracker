@@ -1,5 +1,3 @@
-// frontend/src/pages/Suppliers.jsx
-
 import { useState } from 'react'
 import { 
   Box, 

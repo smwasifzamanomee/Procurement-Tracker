@@ -1,5 +1,3 @@
-// frontend/src/App.jsx
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Box, CssBaseline } from '@mui/material'
 import NavBar from './components/NavBar'

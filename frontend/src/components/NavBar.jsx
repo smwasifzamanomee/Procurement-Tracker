@@ -1,5 +1,3 @@
-// frontend/src/components/NavBar.jsx
-
 import { Drawer, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import { Link } from 'react-router-dom'
 import DashboardIcon from '@mui/icons-material/Dashboard'

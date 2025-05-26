@@ -1,5 +1,3 @@
-// frontend/src/pages/Dashboard.jsx
-
 import { Box, Typography, Paper, Grid } from '@mui/material'
 import { useItems, usePurchaseRequests } from '../hooks/useProcurement'
 
@@ -7,7 +5,6 @@ const Dashboard = () => {
   const { data: itemsData, isLoading: itemsLoading } = useItems()
   const { data: purchaseRequestsData, isLoading: requestsLoading } = usePurchaseRequests()
   
-  // Correct data access - DRF typically returns arrays directly
   const items = Array.isArray(itemsData) ? itemsData : []
   const purchaseRequests = Array.isArray(purchaseRequestsData) ? purchaseRequestsData : []
   

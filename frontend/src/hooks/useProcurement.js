@@ -1,5 +1,3 @@
-// frontend/src/hooks/useProcurement.js
-
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import * as api from '../api'
 
@@ -105,7 +103,6 @@ export const useCreatePurchaseRequest = () => {
     },
     onError: (error) => {
       console.error('Purchase request failed:', error)
-      // Add your error notification here
     }
   })
 }
