@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=main.settings  # Replace with your settings module
+    command: daphne -b 0.0.0.0 -p 8000 main.asgi:application
